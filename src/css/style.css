@@ -8,105 +8,34 @@ body {
     box-sizing: border-box;
 }
 
-.chat {
-    display: flex;
-    align-items: flex-start;
-    width: 800px;
-    margin: 0 auto;
-    margin-top: 100px;
+.container {
+    width: 1000px;
+    margin: 30px auto;
 }
 
-.users {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-right: 0;
-    margin-top: 30px;
+.container .btn {
+    display: inline-block;
+    padding: 7px 15px;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
 }
 
-.messages {
-    width: 70%;
-    padding: 20px;
-    border: 1px solid #ddd;
+.container .btn:hover {
+    background-color: #006adb;
 }
 
-.messages-list {
-    display: flex;
-    align-items: flex-start; 
-    flex-direction: column;
+.container .body {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.9s;
 }
 
-.message {
-    width: 80%;
-    padding: 20px 0;
-}
-
-.message:first-child {
-    padding-top: 0;
-}
-
-.message .header {
-    font-size: 0.9em;
-    display: flex;
-    gap: 7px;
-}
-
-.message.right {
-    align-self: flex-end;
-}
-
-.message.right .header {
-    justify-content: flex-end;
-}
-
-.message.right .content {
-    text-align: right;
-}
-
-.messages-form {
-    display: flex;
-    gap: 10px;
-}
-
-.message-form-input {
-    flex: 1;
-}
-
-.welcome {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    background-color: #fff;
-
-}
-
-.welcome.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.say-name {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 30px;
-}
-
-.name-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.name-form-input,
-.name-form-btn {
-    padding: 5px;
-}
-
-.error {
-    color: #f00;
-    font-size: 12px;
+.container .content {
+    margin: 10px 0;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
 }
